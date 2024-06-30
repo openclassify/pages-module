@@ -30,7 +30,6 @@
         "source": "https://github.com/anomalylabs/pages-module"
     },
     "require": {
-        
     },
     "autoload": {
         "psr-4": {
