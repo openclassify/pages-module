@@ -25,7 +25,7 @@ class PagesModulePlugin extends Plugin
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction(
+            new \Twig\TwigFunction(
                 'structure',
                 function ($root = null) {
                     return (new PagesModuleCriteria(
@@ -43,7 +43,7 @@ class PagesModulePlugin extends Plugin
                         ->setCachePrefix('anomaly.module.pages::pages.structure');
                 }
             ),
-            new \Twig_SimpleFunction(
+            new \Twig\TwigFunction(
                 'page',
                 function ($identifier = null) {
                     return (new Decorator())->decorate(dispatch_sync(new GetPage($identifier)));
