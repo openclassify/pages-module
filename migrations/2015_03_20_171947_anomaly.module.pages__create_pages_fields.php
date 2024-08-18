@@ -70,7 +70,7 @@ class AnomalyModulePagesCreatePagesFields extends Migration
         'theme_layout'     => [
             'type'   => 'anomaly.field_type.select',
             'config' => [
-                'default_value' => 'theme::layouts/default.twig',
+                'default_value' => 'visiosoft.theme.sahibinden::layouts/default.twig',
                 'handler'       => 'Anomaly\SelectFieldType\Handler\Layouts@handle',
             ],
         ],
