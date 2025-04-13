@@ -85,7 +85,7 @@ class TypeSeeder extends Seeder
                     ],
                     'slug'         => 'default',
                     'handler'      => 'anomaly.extension.default_page_handler',
-                    'theme_layout' => 'theme::layouts/default.twig',
+                    'theme_layout' => 'visiosoft.theme.sahibinden::layouts/default.twig',
                     'layout'       => '<h1>{{ page.title }}</h1>
 
 {{ page.content.render|raw }}',

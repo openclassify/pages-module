@@ -65,7 +65,7 @@ class PageSeeder extends Seeder
                 'type'         => $type,
                 'enabled'      => true,
                 'home'         => true,
-                'theme_layout' => 'theme::layouts/default.twig',
+                'theme_layout' => 'visiosoft.theme.sahibinden::layouts/default.twig',
             ]
         )->allowedRoles()->sync([]);
 
@@ -85,7 +85,7 @@ class PageSeeder extends Seeder
                 ),
                 'type'         => $type,
                 'enabled'      => true,
-                'theme_layout' => 'theme::layouts/default.twig',
+                'theme_layout' => 'visiosoft.theme.sahibinden::layouts/default.twig',
             ]
         )->allowedRoles()->sync([]);
     }
